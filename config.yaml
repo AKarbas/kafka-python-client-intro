@@ -1,0 +1,14 @@
+Produce:
+  Topic: test
+  Acks: all
+  BootstrapServers:
+  - localhost:9092
+  MinNum: 1
+  MaxNum: 100
+
+Consume:
+  Topic: test
+  GroupId: group-1
+  AutoOffsetReset: earliest
+  BootstrapServers:
+  - localhost:9092
